@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Questrial&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(73, 144, 210);;
+}
+
+h1 {
+    margin-top: 50px;
+    line-height: 5rem;
+}
+
+.container {
+    background: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.robot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15vh;
+    margin-top: 20px;
+}
+
+.robot-head {
+    width: 200px;
+    height: 150px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background: rgb(73, 144, 210);
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+.eyes {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.eye1 {
+    background: #f4f4f4;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.eye2 {
+    background: #f4f4f4;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.robot-body{
+    display: flex;
+}
+
+.chest {
+    background: rgb(73, 144, 210);
+    color: aliceblue;
+    width: 200px;
+    height: 200px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: .7rem;
+    padding: 10px;
+}
+.chest p:nth-child(3), .chest p:nth-child(4){
+    margin-left: 20px;
+}
+
+.left-arm, .right-arm {
+    background: rgb(73, 144, 210);
+    width: 40px;
+    height: 130px;
+    margin: 0 10px;
+    border-radius: 20px;
+    transition: all 1s;
+}
+
+.foot {
+    display: flex;
+}
+
+.left-leg, .right-leg {
+    background: rgb(73, 144, 210);
+    width: 40px;
+    height: 100px;
+    margin: 0 20px;
+    margin-top: -25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all .2s;
+}
+
+.robot-head:hover {
+    width: 300px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+}
+
+.left-leg:hover {
+    transform: rotate(20deg);
+    margin-top: -26px;
+}
+
+.left-arm:hover {
+    transform: rotate(120deg);
+}

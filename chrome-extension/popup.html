@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Launcher</title>
+    <link rel="stylesheet" href="http://font.googleapis.com/css?family=Muli&display=swap" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Questrial&family=Roboto+Mono&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto Mono', monospace;
+            color: rgb(73, 144, 210);
+            min-height: 300px;
+            width: 400px;
+        }
+        h1 {
+            font-size: 1.7rem;
+            margin-top: 50px;
+            line-height: 2rem;
+        }
+        .container {
+            background: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .robot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15vh;
+            margin-top: 20px;
+            position: absolute;
+            top: 0;
+        }
+        .robot-head {
+            width: 150px;
+            height: 109px;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            background: rgb(73, 144, 210);
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 10px;
+            transition: all 1s;
+        }
+        .eyes {
+            width: 150px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .eye1 {
+            background: #f4f4f4;
+            width: 15px;
+            height: 15px;
+            margin-bottom: 18px;
+            border-radius: 50%;
+        }
+        .eye2 {
+            background: #f4f4f4;
+            width: 15px;
+            height: 15px;
+            margin-bottom: 18px;
+            border-radius: 50%;
+        }
+        .robot-body{
+            display: flex;
+        }
+        .chest {
+            background: rgb(73, 144, 210);
+            color: aliceblue;
+            font-size: 12px;
+            width: 150px;
+            height: 120px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            z-index: 5;
+        }
+        .left-arm, .right-arm {
+            background: rgb(73, 144, 210);
+            width: 26px;
+            height: 80px;
+            margin: 0 8px;
+            border-radius: 20px;
+        }
+        .foot {
+            display: flex;
+        }
+        .left-leg, .right-leg {
+            background: rgb(73, 144, 210);
+            width: 26px;
+            height: 60px;
+            margin: 0 14px;
+            margin-top: -5px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .robot-head:hover {
+            width: 218px;
+            border-top-left-radius: 109px;
+            border-top-right-radius: 109px;
+        }
+        .left-leg:hover {
+            transform:rotate(20deg);
+            margin-top: -8px;
+        }
+        .left-arm:hover {
+            transform: rotate(120deg);
+        }
+    </style>
+</head>  
+<body>
+    <div class="container">
+        <!-- <h1>robot friend</h1> -->
+        <div class="robot">
+            <div class="robot-head">
+                <div class="eyes">
+                    <div class="eye1"></div>
+                    <div class="eye2"></div>
+                </div>
+            </div>
+            <div class="robot-body">
+                <div class="left-arm"></div>
+                <div class="chest"></div>
+                <div class="right-arm"></div>
+            </div>
+            <div class="foot">
+                <div class="left-leg"></div>
+                <div class="right-leg"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
